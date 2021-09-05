@@ -1,20 +1,21 @@
 package uk.ac.qub.eeecs.dave;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-class CalculatorTest {
-
-	@Test
-	void testAdd() {
-		Calculator c = new Calculator();
-		assertEquals(c.add(10,1), 11);
-	}
+public class CalculatorTest {
 	
 	@Test
-	void testSub() {
+	public void testAdd() {
 		Calculator c = new Calculator();
-		assertEquals(c.sub(10,1), 9);
+		assertEquals(c.add(10, 1), 11);
 	}
+
+	@Test
+	public void testSub() {
+		Calculator c = new Calculator();
+		assertEquals(c.sub(10, 1), 9);
+	}
+
 }
